@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from argparse import ArgumentParser
 
-from . import __version__, __author__
+from . import __author__, __version__
 
 
 def build_parser() -> ArgumentParser:
