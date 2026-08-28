@@ -11,6 +11,19 @@ def build_parser() -> ArgumentParser:
         description="Software defect prediction model for DAT-330",
     )
 
-    parser.add_argument("-v", "--version", action="version", version="%(prog)s 0.1.0")
+    parser.add_argument(
+        "-v",
+        "--version",
+        action="version",
+        version=f"%(prog)s {__version__} by {__author__}",
+    )
 
     return parser
+
+
+def main() -> None:
+    build_parser().parse_args()
+
+
+if __name__ == "__main__":
+    main()
