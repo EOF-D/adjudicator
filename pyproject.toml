@@ -21,9 +21,14 @@ black = "^26.5.1"
 [tool.poetry.group.dev.dependencies]
 black = ">=26.5.1,<27.0.0"
 isort = "^5.13.2"
+pandas-stubs = "^3.0.5"
 
 [tool.pyright]
 typeCheckingMode = "strict"
+include = ["adjudicator", "tests"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
 
 [build-system]
 requires = ["poetry-core"]
