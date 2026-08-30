@@ -1,5 +1,5 @@
 [flake8]
 max-line-length = 88
-extend-ignore = E203, W503, D102, D103, D105, D107
+extend-ignore = E203, W503, D100, D102, D103, D105, D107
 docstring-convention = google
 exclude = .git,__pycache__,.venv,dist,build
